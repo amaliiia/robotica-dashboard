@@ -1,0 +1,68 @@
+<!-- ROTAS -->
+<div class="view" id="view-rotas">
+    <div class="view-header">
+        <h2>Rotas de coleta</h2>
+        <p>Otimize o trajeto do dia para economizar combustível</p>
+    </div>
+    <div class="route-controls">
+        <h3><i class="ti ti-list-numbers" aria-hidden="true"
+                style="font-size:15px;vertical-align:-2px;margin-right:6px"></i>Paradas do dia — 28/06/2026</h3>
+        <div class="stop-list">
+            <div class="stop-item">
+                <div class="stop-num">P</div>
+                <div class="stop-addr"><strong>Ponto de partida:</strong> R. Equador, 44 — Previdência, Fortaleza</div>
+                <div class="stop-dist">—</div>
+            </div>
+            <div class="stop-item">
+                <div class="stop-num">1</div>
+                <div class="stop-addr">Av. Beira Mar, 3000 — Meireles (InfoTech Soluções)</div>
+                <div class="stop-dist">4,2 km</div>
+            </div>
+            <div class="stop-item">
+                <div class="stop-num">2</div>
+                <div class="stop-addr">R. Nogueira Acioli, 120 — Aldeota (C. E. Martins)</div>
+                <div class="stop-dist">+2,7 km</div>
+            </div>
+            <div class="stop-item">
+                <div class="stop-num">3</div>
+                <div class="stop-addr">R. Padre Mororó, 38 — Centro (E.E. Menezes Pimentel)</div>
+                <div class="stop-dist">+3,5 km</div>
+            </div>
+        </div>
+        <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" style="font-size:12px;padding:8px 14px"><i class="ti ti-route"
+                    aria-hidden="true"></i> Recalcular rota</button>
+            <button class="btn btn-ghost" style="font-size:12px;padding:8px 14px"><i class="ti ti-plus"
+                    aria-hidden="true"></i> Adicionar parada</button>
+        </div>
+    </div>
+    <div class="route-map">
+        <div class="map-placeholder">
+            <i class="ti ti-map-2" aria-hidden="true"></i>
+            <p style="font-weight:500;color:var(--rs-green-dark)">Rota otimizada disponível</p>
+            <p>3 paradas · percurso circular</p>
+            <button class="open-map"
+                onclick="openLink('https://www.google.com/maps/dir/R.+Equador+44+Fortaleza/Av.+Beira+Mar+3000+Fortaleza/R.+Nogueira+Acioli+120+Fortaleza/R.+Padre+Mororo+38+Fortaleza')">
+                <i class="ti ti-external-link" aria-hidden="true"></i> Abrir no Google Maps
+            </button>
+        </div>
+    </div>
+    <div class="route-summary">
+        <div class="route-stat">
+            <div class="rs-v">10,4 km</div>
+            <div class="rs-l">distância total</div>
+        </div>
+        <div class="route-stat">
+            <div class="rs-v">~35 min</div>
+            <div class="rs-l">tempo estimado</div>
+        </div>
+        <div class="route-stat">
+            <div class="rs-v">~1,2 L</div>
+            <div class="rs-l">combustível est.</div>
+        </div>
+        <div class="route-stat">
+            <div class="rs-v">3 coletas</div>
+            <div class="rs-l">no percurso</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robótica Sustentável</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <div class="brand">Robótica<br><span>Sustentável</span></div>
+                <div class="sub">Reciclagem Eletrônica</div>
+            </div>
+            <nav class="nav">
+                <div class="nav-section">Principal</div>
+                <button class="nav-item active" onclick="loadView('coleta')" id="nav-coleta">
+                    <i class="ti ti-clipboard-plus" aria-hidden="true"></i> Solicitar coleta
+                </button>
+                <div class="nav-section">Gestão</div>
+                <button class="nav-item" onclick="loadView('painel')" id="nav-painel">
+                    <i class="ti ti-layout-list" aria-hidden="true"></i> Painel de controle
+                </button>
+                <button class="nav-item" onclick="loadView('rotas')" id="nav-rotas">
+                    <i class="ti ti-route" aria-hidden="true"></i> Rotas de coleta
+                </button>
+                <button class="nav-item" onclick="loadView('declaracao')" id="nav-declaracao">
+                    <i class="ti ti-file-certificate" aria-hidden="true"></i> Declaração
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main" id="main-content">
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
